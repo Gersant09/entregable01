@@ -1,0 +1,43 @@
+.containerInfor__tittle {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    text-shadow: 5px 5px 1px var(--black);
+    text-transform: uppercase;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+.containerInfo__phrase {
+    color: darkslateblue;
+    background-image: url("/images/rectangle.png");
+    padding: 20px;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    aspect-ratio: 3;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+}
+
+.containerInfo__author {
+    background-color: rgba(255, 255, 255, 0.671);
+    color: darkslateblue;
+    font-weight: lighter;
+    text-align: center;
+    padding: 10px 20px;
+    max-width: max-content;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    
+}

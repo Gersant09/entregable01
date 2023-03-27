@@ -1,0 +1,36 @@
+import { useState } from 'react'
+import './App.css'
+import ContainerInfo from './components/ContainerInfo'
+import db from "./db/db.json"
+
+const images = ["bg1","bg2","bg3","bg4"]
+
+function App() {
+
+
+  const getRandomItem = (listItems) => {
+    const ramdonIndex = Math.floor(Math.random() * listItems.length)
+    return listItems[ramdonIndex]
+  }
+
+  const [quote, setquote] = useState(getRandomItem(db))
+  const [bgImage, setbgImage] = useState(getRandomItem(images))
+
+  const handleNewQuote = ()=>{
+    setquote(getRandomItem(db))
+    setbgImage(getRandomItem(images))
+  }
+
+  return (
+    <div className={`App ${bgImage}`}>
+
+      <ContainerInfo quote={quote} handleNewQuote ={handleNewQuote} />
+
+
+      
+
+    </div>
+  )
+}
+
+export default App
