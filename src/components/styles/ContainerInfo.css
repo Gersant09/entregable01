@@ -39,5 +39,6 @@
     bottom: 10px;
     left: 50%;
     transform: translate(-50%);
+    background-image: url("/public/images/halfcircle.png");
     
 }

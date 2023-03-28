@@ -14,6 +14,7 @@ const ContainerInfo = ({quote}, {handleNewQuote}) => {
         </article>
 
         <Button handleNewQuote={handleNewQuote}/>
+        
 
         <article className='containerInfo__author'>
           <h4>Fuente: {quote.author}</h4>
