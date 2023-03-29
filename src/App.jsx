@@ -35,11 +35,17 @@ function App() {
         </article>
 
         {/* <Button handleNewQuote={handleNewQuote}/> */}
-        <button className='button' onClick={handleNewQuote}><img src="/images/vector.png" alt="" /></button>
+        <article className='containerInfo__refreshbtn'>
+        <img className='button' onClick={handleNewQuote} src="/images/vector.png" alt="" />
+        </article>
+        
         
 
         <article className='containerInfo__author'>
+          <div className='containerInfo__source'>
           <h4>Fuente: {quote.author}</h4>
+          </div>
+          
         </article>
 
       </section>

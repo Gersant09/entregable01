@@ -28,17 +28,37 @@
 }
 
 .containerInfo__author {
-    background-color: rgba(255, 255, 255, 0.671);
-    color: darkslateblue;
     font-weight: lighter;
     text-align: center;
     padding: 10px 20px;
-    max-width: max-content;
     margin: 0 auto;
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     left: 50%;
     transform: translate(-50%);
-    background-image: url("/public/images/halfcircle.png");
-    
+    min-width: 260px;
+    min-height: 111px;
+    background-image: url("/images/halfcircle.png");
+    background-repeat: round;
+    background-size: cover;
+       
+}
+
+.containerInfo__source{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.containerInfo__refreshbtn{
+padding: 20px;
+text-align: center;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+display: flex;
+align-items: center;
+justify-content: center;
+max-width: 400px;
 }
